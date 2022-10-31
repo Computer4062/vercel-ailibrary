@@ -5,7 +5,7 @@ const Codes = require('./models/Codes')
 
 const app = express()
 
-mongoose.connect('mongodb://localhost/AILIBRARY',{
+mongoose.connect('mongodb+srv://AILIBRARY:MTE2008MTE@codes.npb9iop.mongodb.net/test',{
     useNewUrlParser: true, useUnifiedTopology: true
 })
 
