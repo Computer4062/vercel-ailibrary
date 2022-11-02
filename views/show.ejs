@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>AI LIBRARY</title>
 </head>
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">AI LIBRARY</a>
+        <a class="navbar-brand" href="#"><span class="text-info">AI</span> LIBRARY</a>
         <div class="collapse navbar-collapse">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/">Main</a>
@@ -19,16 +19,21 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="text-white">
+        <div class="container">
 
-        <h1><%= codes.title %></h1>
+            <h1><%= codes.title %></h1>
 
-        <div class="muted-text">
-            <p><%= codes.date.toLocaleDateString() %>  |   Username: <%= codes.user %>   |    Programming Language: <%= codes.programming_language %></p>
+            <div class="muted-text">
+                <p><%= codes.date.toLocaleDateString() %>  |   Username: <%= codes.user %>   |    Programming Language: <%= codes.programming_language %></p>
+            </div>
+            <div class="text-light">
+                <hr />
+            </div>
+
+            <pre class="text-white"><code><%= codes.code %></code></pre>
+
         </div>
-        <hr />
-        <textarea disabled class="form-control" rows="10" columns="10"><%= codes.code %></textarea>
-
     </div>
 
 </body>

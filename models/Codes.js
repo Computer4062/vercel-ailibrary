@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const marked = require('marked')
 const slugify = require('slugify')
 
 const Codes = mongoose.Schema({
@@ -42,4 +41,4 @@ Codes.pre('validate', function(next) {
    next()
 })
 
-module.exports = mongoose.model('Codes', Codes)
+module.exports = mongoose.model('code', Codes)
