@@ -20,4 +20,4 @@ app.get('/', async (req, res) => {
 
 app.use('/code', router)
 
-app.listen(process.env.PORT || 3001)
+app.listen(process.env.PORT || 3000)
