@@ -16,6 +16,10 @@
   "engines": {
     "node": "14.x"
   },
+  "respository":{
+    "type": "git",
+    "url": "git+https://github.com/Computer4062/vercel-ailibrary.git"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
